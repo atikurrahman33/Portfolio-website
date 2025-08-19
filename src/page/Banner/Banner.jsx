@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const tools = [
   { name: "React", icon: "⚛️" },
@@ -50,12 +51,14 @@ const Banner = () => {
             >
               <i className="fas fa-download mr-2"></i> Download Resume
             </button>
+            <Link to="/resume">
             <button
               onClick={() => setIsModalOpen(true)}
               className="border border-gray-800 text-gray-800 px-6 py-3 rounded-lg font-semibold flex items-center justify-center hover:bg-gray-800 hover:text-white transition-all duration-300"
             >
               <i className="fas fa-eye mr-2"></i> Preview Resume
             </button>
+            </Link>
           </div>
         </div>
 

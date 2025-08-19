@@ -2,16 +2,16 @@ import { FaTwitter, FaFacebookF, FaHeart, FaMapMarkerAlt, FaEnvelope, FaPhone, F
 
 const Footer = () => {
   return (
-    <footer className="bg-[#2D3142] text-white pt-12 pb-8 px-6">
+    <footer className=" text-gray-700 pt-12 pb-8 px-6 mt-4">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Brand Section */}
           <div className="flex flex-col">
             <div className="mb-6">
-              <span className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500 relative inline-block">
+              <span className="text-4xl font-bold text-gray-900 relative inline-block">
                 Atikur
               </span>
-              <p className="text-gray-300 mt-4 text-sm">
+              <p className="text-gray-600 mt-4 text-sm">
                 Crafting beautiful digital experiences with precision and creativity.
               </p>
             </div>
@@ -20,54 +20,54 @@ const Footer = () => {
                 href="https://twitter.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center hover:-translate-y-1 transition-all"
+                className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center hover:bg-blue-700 transition-colors"
               >
-                <FaTwitter />
+                <FaTwitter className="text-white" />
               </a>
               <a
                 href="https://facebook.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-blue-700 flex items-center justify-center hover:-translate-y-1 transition-all"
+                className="w-10 h-10 rounded-full bg-blue-800 flex items-center justify-center hover:bg-blue-900 transition-colors"
               >
-                <FaFacebookF />
+                <FaFacebookF className="text-white" />
               </a>
             </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-6 relative inline-block">
+            <h3 className="text-lg font-semibold mb-6 relative inline-block text-gray-900">
               Quick Links
               <span className="absolute bottom-0 left-0 w-1/2 h-1 bg-blue-400 rounded-full"></span>
             </h3>
             <ul className="space-y-3">
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Home</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">About</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Projects</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Skills</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">Home</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">About</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">Projects</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">Skills</a></li>
             </ul>
           </div>
 
           {/* Services */}
           <div>
-            <h3 className="text-lg font-semibold mb-6 relative inline-block">
+            <h3 className="text-lg font-semibold mb-6 relative inline-block text-gray-900">
               Services
               <span className="absolute bottom-0 left-0 w-1/2 h-1 bg-blue-400 rounded-full"></span>
             </h3>
             <ul className="space-y-3">
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Web Development</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">UI/UX Design</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">Web Development</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">UI/UX Design</a></li>
             </ul>
           </div>
 
           {/* Contact */}
           <div>
-            <h3 className="text-lg font-semibold mb-6 relative inline-block">
+            <h3 className="text-lg font-semibold mb-6 relative inline-block text-gray-900">
               Get in Touch
               <span className="absolute bottom-0 left-0 w-1/2 h-1 bg-blue-400 rounded-full"></span>
             </h3>
-            <address className="text-gray-300 not-italic">
+            <address className="text-gray-600 not-italic">
               <p className="mb-2 flex items-center">
                 <FaMapMarkerAlt className="mr-2 text-blue-400" /> Dhaka, Bangladesh
               </p>
@@ -82,11 +82,11 @@ const Footer = () => {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-gray-600 my-8"></div>
+        <div className="border-t border-blue-400 my-8"></div>
 
         {/* Copyright */}
         <div className="flex flex-col md:flex-row items-center justify-between">
-          <p className="text-sm text-gray-300 mb-4 md:mb-0 flex items-center">
+          <p className="text-sm text-gray-600 mb-4 md:mb-0 flex items-center">
             © {new Date().getFullYear()} All rights reserved. Designed with
             <FaHeart className="text-red-500 mx-1" /> by
             <span className="font-semibold text-blue-400 ml-1">Atikur Rahman</span>
@@ -95,9 +95,9 @@ const Footer = () => {
           {/* Back to Top Button */}
           <a
             href="#"
-            className="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center hover:-translate-y-1 transition-all"
+            className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center hover:bg-blue-700 transition-colors"
           >
-            <FaArrowUp />
+            <FaArrowUp className="text-white" />
           </a>
         </div>
       </div>

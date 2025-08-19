@@ -7,16 +7,16 @@ import { faGithub, faLinkedin, faFacebook, faTwitter } from "@fortawesome/free-b
 
 const About = () => {
   return (
-    <div className="w-full py-16 px-6 bg-white border border-gray-300 rounded-lg shadow-lg">
+    <div className="w-full py-16 px-6 bg-white border border-gray-300 rounded-lg">
       <div className="max-w-6xl mx-auto grid md:grid-cols-12 gap-10 items-center">
         {/* Left Side - Text */}
         <div className="md:col-span-7 space-y-4">
           <h2 className="text-4xl font-bold text-gray-900">Who Am I</h2>
           <p className="text-gray-700">
-            My name is Md. Ashraful Islam, and I am a dedicated MERN Stack Developer based in Dhaka, Bangladesh.
+            My name is <span className="font-medium">Atikur Rahman</span> , and I am a dedicated MERN Stack Developer based in Dhaka, Bangladesh.
           </p>
           <p className="text-gray-700">
-            I have a strong foundation in front-end technologies such as HTML5, CSS3, JavaScript (ES6+), and ReactJS. I excel in creating visually appealing and highly functional web applications, utilizing UI libraries like TailwindCSS and MaterialUI.
+            I have a strong foundation in front-end technologies such as HTML5, CSS3, JavaScript , and ReactJS. I excel in creating visually appealing and highly functional web applications, utilizing UI libraries like TailwindCSS .
           </p>
           <p className="text-gray-700">
             My backend expertise includes NodeJs, ExpressJs, and MongoDB, allowing me to develop robust full-stack solutions.

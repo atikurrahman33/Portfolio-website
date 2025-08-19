@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "projectName": "E-Commerce Platform",
+    "projectDetails": "A full-stack e-commerce platform with shopping cart, payment gateway, and admin dashboard.",
+    "image": "/public/Images/FoodShare.png",
+    "clintlink": "https://github.com/fakeuser/ecommerce-client",
+    "serverlink": "https://github.com/fakeuser/ecommerce-server",
+    "livelink": "https://fake-ecommerce.netlify.app"
+  },
+  {
+    "id": 2,
+    "projectName": "Social Media App",
+    "projectDetails": "A social media application for connecting friends, posting updates, and chatting in real-time.",
+    "image": "/public/Images/BrandShop.png",
+    "clintlink": "https://github.com/fakeuser/social-client",
+    "serverlink": "https://github.com/fakeuser/social-server",
+    "livelink": "https://fake-socialapp.netlify.app"
+  },
+  {
+    "id": 3,
+    "projectName": "Task Manager",
+    "projectDetails": "A productivity app to create, track, and manage daily tasks with notifications and reminders.",
+    "image": "/public/Images/studentManagement.png",
+    "clintlink": "https://github.com/fakeuser/task-client",
+    "serverlink": "https://github.com/fakeuser/task-server",
+    "livelink": "https://fake-taskmanager.netlify.app"
+  },
+  {
+    "id": 4,
+    "projectName": "Portfolio Website",
+    "projectDetails": "A personal portfolio website showcasing projects, skills, and contact information.",
+    "image": "/public/Images/game.png",
+    "clintlink": "https://github.com/fakeuser/portfolio-client",
+    "serverlink": "https://github.com/fakeuser/portfolio-server",
+    "livelink": "https://fake-portfolio.netlify.app"
+  },
+  {
+    "id": 5,
+    "projectName": "Blog Platform",
+    "projectDetails": "A blogging platform allowing users to create, edit, and comment on posts with user authentication.",
+    "image": "/public/Images/ieeegub.png",
+    "clintlink": "https://github.com/fakeuser/blog-client",
+    "serverlink": "https://github.com/fakeuser/blog-server",
+    "livelink": "https://fake-blog.netlify.app"
+  },
+  {
+    "id": 6,
+    "projectName": "Online Learning Portal",
+    "projectDetails": "A learning management system with courses, quizzes, and progress tracking for students.",
+    "image": "/public/Images/flower.png",
+    "clintlink": "https://github.com/fakeuser/learning-client",
+    "serverlink": "https://github.com/fakeuser/learning-server",
+    "livelink": "https://fake-learningportal.netlify.app"
+  }
+]

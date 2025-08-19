@@ -2,10 +2,10 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-white shadow-md">
+    <div className="navbar bg-white shadow-md mt-3">
       {/* Left side: Logo */}
       <div className="navbar-start">
-        <a className="btn btn-ghost text-3xl font-bold text-blue-500">
+        <a className=" text-3xl font-bold text-blue-500">
           Atikur Rahman
         </a>
       </div>
@@ -23,18 +23,18 @@ const Navbar = () => {
         {/* Social icons */}
         <div className="flex items-center space-x-3 ml-4 lg:pr-4">
           <a
-            href="https://github.com/your-github-username"
+            href="https://github.com/atikurrahman33"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-700 hover:text-black text-xl"
+            className="text-blue-400  text-xl"
           >
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/in/your-linkedin-username"
+            href="https://www.linkedin.com/in/atikur-rahman03/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-700 hover:text-blue-600 text-xl"
+            className="text-blue-400  text-xl"
           >
             <FaLinkedin />
           </a>

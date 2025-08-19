@@ -41,7 +41,7 @@ const Skills = () => {
           My Technology Stack
         </h2>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-6 bg-blue-100 p-6 rounded-lg shadow-lg">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-6 bg-blue-50 p-8 rounded-lg shadow-lime-50">
           {skills.map((skill) => (
             <div
               key={skill.name}
