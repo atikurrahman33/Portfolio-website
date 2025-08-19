@@ -32,16 +32,16 @@ const About = () => {
           </p>
            {/* Social Icons */}
           <div className="flex space-x-4 mt-4 text-gray-800">
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-gray-600 transition">
+            <a href="https://github.com/atikurrahman33" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-gray-600 transition">
               <FontAwesomeIcon icon={faGithub} />
             </a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-blue-700 transition">
+            <a href="https://www.linkedin.com/in/atikur-rahman03/" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-blue-700 transition">
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
-            <a href="https://facebook.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-blue-600 transition">
+            <a href="https://www.facebook.com/atikurrahman.foysal.3" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-blue-600 transition">
               <FontAwesomeIcon icon={faFacebook} />
             </a>
-            <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-blue-400 transition">
+            <a href="https://x.com/AtikurRahm59719" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-blue-400 transition">
               <FontAwesomeIcon icon={faTwitter} />
             </a>
           </div>

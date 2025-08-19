@@ -17,18 +17,18 @@ const Footer = () => {
             </div>
             <div className="flex space-x-4">
               <a
-                href="https://twitter.com/"
+                href="https://x.com/AtikurRahm59719"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center hover:bg-blue-700 transition-colors"
+                className="w-10 h-10 rounded-full bg-blue-400 flex items-center justify-center hover:bg-blue-700 transition-colors"
               >
                 <FaTwitter className="text-white" />
               </a>
               <a
-                href="https://facebook.com/"
+                href="https://www.facebook.com/atikurrahman.foysal.3"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-blue-800 flex items-center justify-center hover:bg-blue-900 transition-colors"
+                className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center hover:bg-blue-900 transition-colors"
               >
                 <FaFacebookF className="text-white" />
               </a>
