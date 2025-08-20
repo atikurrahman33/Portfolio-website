@@ -1,56 +1,102 @@
 [
   {
     "id": 1,
-    "projectName": "E-Commerce Platform",
-    "projectDetails": "A full-stack e-commerce platform with shopping cart, payment gateway, and admin dashboard.",
-    "image": "Images/FoodShare.png",
+    "projectName": "Community Food Sharing Platform",
+    "projectDetails": "A community-driven platform that connects people who have surplus food with those in need. The system allows donors to share food securely, track requests, and manage pickups. With Firebase authentication, real-time request handling, and a donation tracking dashboard, the platform promotes sustainability and reduces food waste.",
+    "image": "/public/FoodShare.png",
     "clintlink": "https://github.com/fakeuser/ecommerce-client",
     "serverlink": "https://github.com/fakeuser/ecommerce-server",
-    "livelink": "https://fake-ecommerce.netlify.app"
+    "livelink": "https://fake-ecommerce.netlify.app",
+    "features": [
+      "User Authentication (Firebase): Secure and efficient login/registration system.",
+      "Food Donation Management: Logged-in users can add, update, or delete food donations.",
+      "Tracking & Requests: Users can manage donations in My Food and track requests in My Request.",
+      "Food Pickup: Donated food can be collected at the location specified in the food card.",
+      "Request Handling: Donors can view how many people requested their food and accept requests accordingly."
+    ],
+    "technologies": ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS", "Firebase"],
+    "tags": ["E-commerce", "Food Sharing", "Sustainability", "Donation"]
   },
   {
     "id": 2,
-    "projectName": "Social Media App",
-    "projectDetails": "A social media application for connecting friends, posting updates, and chatting in real-time.",
-    "image": "Images/BrandShop.png",
+    "projectName": "Luxury & Classic Car Brand Shop",
+    "projectDetails": "A marketplace-style web application for browsing, listing, and managing cars by brand. Users can register, log in, and add their own car listings, while visitors can explore vehicles without logging in. The platform includes role-based access for secure management and provides an easy way for buyers and sellers to connect.",
+    "image": "/public/BrandShop.png",
     "clintlink": "https://github.com/fakeuser/social-client",
     "serverlink": "https://github.com/fakeuser/social-server",
-    "livelink": "https://fake-socialapp.netlify.app"
+    "livelink": "https://fake-socialapp.netlify.app",
+    "features": [
+      "User Accounts: Sign up and log in using email-password or Google authentication.",
+      "Car Management: Logged-in users can add cars under categories, and view, update, or delete only their own cars.",
+      "Brand Section: All visitors can browse cars by brand, but detailed car information is restricted to logged-in users."
+    ],
+    "technologies": ["React", "Firebase", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
+    "tags": ["Marketplace", "Car", "Brand Shop", "Vehicles"]
   },
   {
     "id": 3,
-    "projectName": "Task Manager",
-    "projectDetails": "A productivity app to create, track, and manage daily tasks with notifications and reminders.",
-    "image": "Images/studentManagement.png",
+    "projectName": "Student and Class Management",
+    "projectDetails": "A role-based learning management system (LMS) that allows admins, teachers, and students to collaborate in one place. Admins manage users and approve teachers, teachers can create and publish courses, and students can enroll in classes with secure payment integration. The system also includes dashboards for each role, offering a seamless educational experience.",
+    "image": "/public/studentManagement.png",
     "clintlink": "https://github.com/fakeuser/task-client",
     "serverlink": "https://github.com/fakeuser/task-server",
-    "livelink": "https://fake-taskmanager.netlify.app"
+    "livelink": "https://fake-taskmanager.netlify.app",
+    "features": [
+      "User Authentication (Firebase): Secure registration and login for all users.",
+      "Teacher Role (Admin Approval): Approved teachers can add, update, and delete courses, visible only after admin approval.",
+      "Course Enrollment & Payment: Students can enroll in courses by paying the listed price.",
+      "Role-Based Dashboards: Separate dashboards for Admin, Teacher, and Student with role-specific features."
+    ],
+    "technologies": ["React", "Node.js", "MongoDB", "Express", "Firebase", "Stripe"],
+    "tags": ["Education", "Management", "LMS", "Students"]
   },
   {
     "id": 4,
-    "projectName": "Portfolio Website",
-    "projectDetails": "A personal portfolio website showcasing projects, skills, and contact information.",
-    "image": "Images/game.png",
+    "projectName": "Gamer Zone",
+    "projectDetails": "An interactive gaming portal designed for gamers to explore trending games, compete in leaderboards, and showcase achievements. The platform features a dynamic game library, user profiles, and community engagement options, making it a hub for gaming enthusiasts to connect and share their experiences.",
+    "image": "/public/game.png",
     "clintlink": "https://github.com/fakeuser/portfolio-client",
-    "serverlink": "https://github.com/fakeuser/portfolio-server",
-    "livelink": "https://fake-portfolio.netlify.app"
+    
+    "livelink": "https://fake-portfolio.netlify.app",
+    "features": [
+      "Game library showcase with detailed game pages.",
+      "Leaderboard system for player ranking and scores.",
+      "User profiles with achievements and saved games."
+    ],
+    "technologies": ["Next.js", "Tailwind CSS", "Firebase"],
+    "tags": ["Gaming", "Platform", "Entertainment", "Community"]
   },
   {
     "id": 5,
-    "projectName": "Blog Platform",
-    "projectDetails": "A blogging platform allowing users to create, edit, and comment on posts with user authentication.",
-    "image": "Images/ieeegub.png",
+    "projectName": "IEEE Website",
+    "projectDetails": "A dedicated platform for the IEEE Student Branch to showcase events, activities, and announcements. Built with Next.js and Tailwind CSS, it provides modern UI, event browsing, and context-based state management. The project is actively maintained and includes planned future upgrades like role-based dashboards for admins, moderators, and members.",
+    "image": "/public/ieeegub.png",
     "clintlink": "https://github.com/fakeuser/blog-client",
-    "serverlink": "https://github.com/fakeuser/blog-server",
-    "livelink": "https://fake-blog.netlify.app"
+    
+    "livelink": "https://fake-blog.netlify.app",
+    "features": [
+      "Modern UI: Built with Next.js and Tailwind CSS for a clean, responsive design.",
+      "Event Management: Browse upcoming events with details such as date, time, and registration link.",
+      "Dynamic Content: Event listings and details are managed via context-based state.",
+      "Role-Based Sections (Future Scope): Planned dashboards for Admin, Moderator, and Members."
+    ],
+    "technologies": ["Next.js", "MongoDB", "Express", "Tailwind CSS"],
+    "tags": ["Blog", "Education", "IEEE", "Events"]
   },
   {
     "id": 6,
-    "projectName": "Online Learning Portal",
-    "projectDetails": "A learning management system with courses, quizzes, and progress tracking for students.",
-    "image": "Images/flower.png",
+    "projectName": "Flower Shop",
+    "projectDetails": "An online flower shop where customers can browse a wide variety of flowers, view product details, and purchase through a secure checkout process. The platform includes order tracking, user-friendly UI, and an admin dashboard for product management, making it a complete e-commerce solution for florists.",
+    "image": "/public/flower.png",
     "clintlink": "https://github.com/fakeuser/learning-client",
-    "serverlink": "https://github.com/fakeuser/learning-server",
-    "livelink": "https://fake-learningportal.netlify.app"
+    
+    "livelink": "https://fake-learningportal.netlify.app",
+    "features": [
+      "Product catalog with categorized flowers.",
+      "Cart & checkout with payment integration.",
+      "Order tracking and customer management."
+    ],
+    "technologies": ["React", "Node.js", "Express", "MongoDB", "Stripe", "Tailwind CSS"],
+    "tags": ["E-commerce", "Flower Shop", "Online Store", "Retail"]
   }
 ]
