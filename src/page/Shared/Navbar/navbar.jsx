@@ -2,10 +2,10 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-white shadow-md mt-3">
+    <div className="navbar max-w-7xl mx-auto mt-2  fixed top-0 left-0 right-0 backdrop-blur-md bg-blue-200/30 shadow-md z-50">
       {/* Left side: Logo */}
       <div className="navbar-start">
-        <a className=" text-3xl font-bold text-blue-500">
+        <a className="text-3xl font-bold text-blue-500">
           Atikur Rahman
         </a>
       </div>

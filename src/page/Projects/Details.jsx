@@ -22,7 +22,7 @@ const Details = () => {
         {/* Back button */}
         <Link
           to="/"
-          className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors mb-6 font-medium"
+          className="inline-flex mt-16 items-center text-blue-600 hover:text-blue-800 transition-colors font-medium"
         >
           <ArrowLeft className="w-4 h-4 mr-2" /> Back to Projects
         </Link>
@@ -34,46 +34,11 @@ const Details = () => {
               <div className="mb-6">
                 <h1 className="text-3xl font-bold text-gray-900 mb-2">{project.projectName}</h1>
 
-                {/* Project metadata */}
-                <div className="flex flex-wrap items-center gap-4 text-sm text-gray-600 mb-4">
-                  {project.date && (
-                    <div className="flex items-center">
-                      <Calendar className="w-4 h-4 mr-1" />
-                      <span>{project.date}</span>
-                    </div>
-                  )}
-                  {project.duration && (
-                    <div className="flex items-center">
-                      <Clock className="w-4 h-4 mr-1" />
-                      <span>{project.duration}</span>
-                    </div>
-                  )}
-                  {project.teamSize && (
-                    <div className="flex items-center">
-                      <Users className="w-4 h-4 mr-1" />
-                      <span>{project.teamSize} members</span>
-                    </div>
-                  )}
-                </div>
-
-                {/* Status badge */}
-                {project.status && (
-                  <span
-                    className={`inline-block px-3 py-1 text-xs rounded-full ${
-                      project.status === "Completed"
-                        ? "bg-green-100 text-green-800"
-                        : project.status === "In Progress"
-                        ? "bg-yellow-100 text-yellow-800"
-                        : "bg-blue-100 text-blue-800"
-                    }`}
-                  >
-                    {project.status}
-                  </span>
-                )}
+               
               </div>
 
               {/* Full Details */}
-              <div className="mb-8">
+              <div className="">
                 <h2 className="text-xl font-semibold text-gray-800 mb-3">Project Overview</h2>
                 <p className="text-gray-700 leading-relaxed">{project.projectDetails}</p>
               </div>
@@ -88,15 +53,7 @@ const Details = () => {
                   className="w-full h-auto object-cover rounded-xl shadow-lg mb-8"
                 />
 
-                {/* Challenges & Solutions */}
-                {project.challenges && (
-                  <div className="mb-8">
-                    <h2 className="text-xl font-semibold text-gray-800 mb-3">Challenges & Solutions</h2>
-                    <div className="bg-white p-4 rounded-lg shadow-sm">
-                      <p className="text-gray-700">{project.challenges}</p>
-                    </div>
-                  </div>
-                )}
+                
               </div>
             </div>
           </div>

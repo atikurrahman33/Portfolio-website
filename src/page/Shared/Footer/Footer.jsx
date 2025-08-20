@@ -2,13 +2,13 @@ import { FaTwitter, FaFacebookF, FaHeart, FaMapMarkerAlt, FaEnvelope, FaPhone, F
 
 const Footer = () => {
   return (
-    <footer className=" text-gray-700 pt-12 pb-8 px-6 mt-4">
-      <div className="container mx-auto">
+    <footer className=" bg-white text-gray-700 pt-6 pb-8 px-6 mt-4">
+      <div className="container mx-auto max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Brand Section */}
           <div className="flex flex-col">
             <div className="mb-6">
-              <span className="text-4xl font-bold text-gray-900 relative inline-block">
+              <span className="text-4xl font-bold text-blue-500 relative inline-block">
                 Atikur
               </span>
               <p className="text-gray-600 mt-4 text-sm">
@@ -42,7 +42,7 @@ const Footer = () => {
               <span className="absolute bottom-0 left-0 w-1/2 h-1 bg-blue-400 rounded-full"></span>
             </h3>
             <ul className="space-y-3">
-              <li><a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">Home</a></li>
+              <li><a href="/" className="text-gray-600 hover:text-gray-900 transition-colors">Home</a></li>
               <li><a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">About</a></li>
               <li><a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">Projects</a></li>
               <li><a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">Skills</a></li>
@@ -72,17 +72,17 @@ const Footer = () => {
                 <FaMapMarkerAlt className="mr-2 text-blue-400" /> Dhaka, Bangladesh
               </p>
               <p className="mb-2 flex items-center">
-                <FaEnvelope className="mr-2 text-blue-400" /> hello@atikur.com
+                <FaEnvelope className="mr-2 text-blue-400" /> foysalatik33@gmail.com
               </p>
               <p className="flex items-center">
-                <FaPhone className="mr-2 text-blue-400" /> +880 1234 567890
+                <FaPhone className="mr-2 text-blue-400" /> +880 1822988250
               </p>
             </address>
           </div>
         </div>
 
         {/* Divider */}
-        <div className="border-t border-blue-400 my-8"></div>
+        <div className="border-t border-blue-400 pt-1"></div>
 
         {/* Copyright */}
         <div className="flex flex-col md:flex-row items-center justify-between">
