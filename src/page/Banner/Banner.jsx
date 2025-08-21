@@ -62,7 +62,7 @@ const Banner = () => {
 <Link to="/resume" className="w-full sm:w-auto flex">
   <button
     onClick={() => setIsModalOpen(true)}
-    className="border border-gray-800 text-gray-800 px-4 py-3 sm:px-5 sm:py-3 rounded-lg font-semibold flex items-center justify-center hover:bg-gray-800 hover:text-white transition-all duration-300 text-sm sm:text-base w-full sm:w-auto"
+    className="border border-gray-800 text-gray-800 px-8 py-3 sm:px-7 sm:py-3 rounded-lg font-semibold flex items-center justify-center hover:bg-gray-800 hover:text-white transition-all duration-300 text-sm sm:text-base w-full sm:w-auto"
   >
     <i className="fas fa-eye mr-2"></i> Preview Resume
   </button>

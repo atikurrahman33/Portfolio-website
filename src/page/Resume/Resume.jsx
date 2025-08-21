@@ -19,8 +19,8 @@ const Resume = () => {
             <p> foysalatik33@gmail.com  </p>
             <p> (+88) 01822988250</p>
             <p className="mt-1">
-              <a href="#" className="text-blue-600 hover:underline mr-4">GitHub</a>
-              <a href="#" className="text-blue-600 hover:underline">Portfolio</a>
+              <a href="https://github.com/atikurrahman33" className="text-blue-600 hover:underline mr-4">GitHub</a>
+              <a href="https://atiksportfolio.vercel.app/" className="text-blue-600 hover:underline">Portfolio</a>
             </p>
           </div>
         </header>
@@ -73,11 +73,8 @@ const Resume = () => {
           <li>Role-based sections (future scope)</li>
         </ul>
         <div className="flex gap-2 font-semibold">
-          <a href="" className="text-blue-600 hover:underline">Client </a>
-          <span>-</span>
-          <a href="" className="text-blue-600 hover:underline">Server </a>
-          <span>-</span>
-          <a href="" className="text-blue-600 hover:underline">Live </a>
+          
+          <a href="https://ieeegub.vercel.app/" className="text-blue-600 hover:underline">Live </a>
         </div>
       </div>
     </div>
@@ -96,11 +93,11 @@ const Resume = () => {
           <li>Role-based dashboards for Admin, Teacher, Student</li>
         </ul>
         <div className="flex gap-2 font-semibold">
-          <a href="" className="text-blue-600 hover:underline">Client </a>
+          <a href="https://github.com/atikurrahman33/Student-and-Class-Management-client" className="text-blue-600 hover:underline">Client </a>
           <span>-</span>
-          <a href="" className="text-blue-600 hover:underline">Server </a>
+          <a href="https://github.com/atikurrahman33/Student-and-Class-Management-server" className="text-blue-600 hover:underline">Server </a>
           <span>-</span>
-          <a href="" className="text-blue-600 hover:underline">Live </a>
+          <a href="https://edumentor12.netlify.app/" className="text-blue-600 hover:underline">Live </a>
         </div>
       </div>
     </div>
@@ -118,11 +115,11 @@ const Resume = () => {
           <li>Request handling & food pickup system</li>
         </ul>
         <div className="flex gap-2 font-semibold">
-          <a href="" className="text-blue-600 hover:underline">Client </a>
+          <a href="https://github.com/atikurrahman33/Food-Sharing-Client" className="text-blue-600 hover:underline">Client </a>
           <span>-</span>
-          <a href="" className="text-blue-600 hover:underline">Server </a>
+          <a href="https://github.com/atikurrahman33/Food-Sharing-server" className="text-blue-600 hover:underline">Server </a>
           <span>-</span>
-          <a href="" className="text-blue-600 hover:underline">Live </a>
+          <a href="https://foodsharing.netlify.app/" className="text-blue-600 hover:underline">Live </a>
         </div>
       </div>
     </div>
@@ -140,11 +137,11 @@ const Resume = () => {
           <li>Brand browsing for all users</li>
         </ul>
         <div className="flex gap-2 font-semibold">
-          <a href="" className="text-blue-600 hover:underline">Client </a>
+          <a href="https://github.com/atikurrahman33/Simple-Brand-Client" className="text-blue-600 hover:underline">Client </a>
           <span>-</span>
-          <a href="" className="text-blue-600 hover:underline">Server </a>
+          <a href="https://github.com/atikurrahman33/Simple-Brand-Server" className="text-blue-600 hover:underline">Server </a>
           <span>-</span>
-          <a href="" className="text-blue-600 hover:underline">Live </a>
+          <a href="https://65380c5660e984007a96edf3--quiet-boba-078908.netlify.app/" className="text-blue-600 hover:underline">Live </a>
         </div>
       </div>
     </div>

@@ -37,7 +37,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto py-16 px-6 min-h-screen flex justify-center items-center">
+    <div id="contact" className="max-w-6xl mx-auto py-16 px-6 min-h-screen flex justify-center items-center">
       <div className="contact-card w-full max-w-6xl grid grid-cols-1 lg:grid-cols-12 shadow-xl rounded-xl overflow-hidden">
         
         {/* Left Side - Form Section */}
