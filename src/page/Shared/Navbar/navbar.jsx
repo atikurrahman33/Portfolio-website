@@ -1,31 +1,38 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="navbar max-w-7xl mx-auto mt-2 fixed top-0 left-0 right-0 backdrop-blur-md bg-blue-200/30 shadow-md z-50">
+    <div className="navbar max-w-7xl mx-auto mt-2 fixed top-0 left-0 right-0 backdrop-blur-md bg-blue-200/30 shadow-md z-50 px-4 lg:px-0">
       {/* Left side: Logo */}
       <div className="navbar-start">
-        <HashLink smooth to="#home" className="text-3xl font-bold text-blue-500">
+        <Link to="/" className="text-3xl font-bold text-blue-500">
           Atikur Rahman
-        </HashLink>
+        </Link>
       </div>
 
       {/* Right side: Menu + Icons */}
-      <div className="navbar-end">
+      <div className="navbar-end flex items-center space-x-4">
         {/* Menu for large screens */}
         <ul className="menu menu-horizontal hidden lg:flex px-1 space-x-4 text-gray-700 font-medium">
           <li>
             <HashLink smooth to="#home">Home</HashLink>
           </li>
           <li>
-            <HashLink smooth to="#project">Projects</HashLink>
+            <HashLink smooth to="#project">
+              Projects
+            </HashLink>
           </li>
           <li>
-            <HashLink smooth to="#skill">Skills</HashLink>
+            <HashLink smooth to="#skill">
+              Skills
+            </HashLink>
           </li>
           <li>
-            <HashLink smooth to="#contact">Contact</HashLink>
+            <HashLink smooth to="#contact">
+              Contact
+            </HashLink>
           </li>
         </ul>
 
@@ -67,16 +74,22 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
             <li>
-              <HashLink smooth to="/">Home</HashLink>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <HashLink smooth to="#project">Projects</HashLink>
+              <HashLink smooth to="#project">
+                Projects
+              </HashLink>
             </li>
             <li>
-              <HashLink smooth to="#skill">Skills</HashLink>
+              <HashLink smooth to="#skill">
+                Skills
+              </HashLink>
             </li>
             <li>
-              <HashLink smooth to="#contact">Contact</HashLink>
+              <HashLink smooth to="#contact">
+                Contact
+              </HashLink>
             </li>
           </ul>
         </div>

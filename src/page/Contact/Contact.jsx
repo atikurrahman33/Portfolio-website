@@ -1,133 +1,148 @@
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faEnvelope, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
-
+import { useRef, useState } from "react";
+import emailjs from "emailjs-com";
+import Swal from "sweetalert2";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_uyqxhxd", // Replace with your EmailJS service ID
+        "template_wi4tlqk", // Replace with your EmailJS template ID
+        form.current,
+        "blrROPaNUM-y3X8ir" // Replace with your EmailJS public key
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          Swal.fire("Good job!", "Your message has been sent!", "success");
+          setName("");
+          setEmail("");
+          setMessage("");
+        },
+        (error) => {
+          console.log(error.text);
+          Swal.fire("Oops!", "Failed to send message. Please try again.", "error");
+        }
+      );
+  };
+
   return (
-    <div id="contact" className="max-w-6xl mx-auto py-16 px-6 min-h-screen bg-blue-50 flex justify-center items-center bo mt-6 border border-gray-300 rounded-lg shadow-lg
-    
-    ">
-      <div className="contact-card w-full max-w-6xl bg-white rounded-xl shadow-xl overflow-hidden grid grid-cols-1 lg:grid-cols-12 ">
+    <div className="max-w-6xl mx-auto py-16 px-6 min-h-screen flex justify-center items-center">
+      <div className="contact-card w-full max-w-6xl grid grid-cols-1 lg:grid-cols-12 shadow-xl rounded-xl overflow-hidden">
         
         {/* Left Side - Form Section */}
-        <div className="lg:col-span-7 p-8 md:p-12">
-          <form className="space-y-8">
-            {/* Heading */}
+        <div className="lg:col-span-7 p-8 md:p-12 bg-white">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Get in Touch</h2>
+          <p className="text-gray-700 mb-8">
+            Have a question or want to work together? We'd love to hear from you. 
+            Send us a message and we'll respond as soon as possible.
+          </p>
+
+          <form ref={form} onSubmit={sendEmail} className="space-y-6">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-800">Get in Touch</h2>
-              <p className="text-gray-600 mt-3">
-                Have a question or want to work together? We'd love to hear from you. 
-                Send us a message and we'll respond as soon as possible.
-              </p>
+              <label htmlFor="from_name" className="block text-gray-700 font-semibold mb-2">Name</label>
+              <input
+                type="text"
+                name="from_name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                placeholder="Your Name"
+                required
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+              />
             </div>
 
-            {/* Inputs */}
-            <div className="grid md:grid-cols-2 gap-6">
-              {["First Name", "Last Name", "Email Address", "Phone Number"].map((label, idx) => (
-                <div className="relative" key={idx}>
-                  <input
-                    type={label.includes("Email") ? "email" : label.includes("Phone") ? "tel" : "text"}
-                    id={label.replace(" ", "").toLowerCase()}
-                    placeholder=" "
-                    className="peer w-full border-2 border-gray-300 rounded-lg p-4 focus:border-indigo-500 focus:outline-none"
-                  />
-                  <label
-                    htmlFor={label.replace(" ", "").toLowerCase()}
-                    className="absolute left-4 top-4 text-gray-500 text-base transition-all duration-300
-                               peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500
-                               peer-focus:top-0 peer-focus:text-sm peer-focus:text-indigo-500 bg-white px-1"
-                  >
-                    {label}
-                  </label>
-                </div>
-              ))}
+            <div>
+              <label htmlFor="from_email" className="block text-gray-700 font-semibold mb-2">Email</label>
+              <input
+                type="email"
+                name="from_email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Your Email"
+                required
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+              />
             </div>
 
-            {/* Message */}
-            <div className="relative">
+            <div>
+              <label htmlFor="message" className="block text-gray-700 font-semibold mb-2">Message</label>
               <textarea
-                id="message"
-                placeholder=" "
-                className="peer w-full border-2 border-gray-300 rounded-lg p-4 h-40 focus:border-indigo-500 focus:outline-none resize-none"
+                name="message"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                placeholder="Your Message"
+                rows="5"
+                required
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
               ></textarea>
-              <label
-                htmlFor="message"
-                className="absolute left-4 top-4 text-gray-500 text-base transition-all duration-300
-                           peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500
-                           peer-focus:top-0 peer-focus:text-sm peer-focus:text-indigo-500 bg-white px-1"
-              >
-                What do you have in mind?
-              </label>
             </div>
 
-            {/* Submit Button */}
-            <div className="flex justify-center">
-              <button
-                type="submit"
-                className="w-full md:w-64 py-4 rounded-xl font-bold text-lg text-white
-                           bg-gradient-to-r from-indigo-500 to-indigo-700
-                           hover:-translate-y-1 hover:shadow-lg transition-all duration-300 flex items-center justify-center"
-              >
-                Send Message
-                <FontAwesomeIcon icon={faEnvelope} className="ml-2" />
-              </button>
-            </div>
+            <button
+              type="submit"
+              className="bg-blue-400 hover:bg-blue-800 text-white font-bold px-6 py-2 rounded-lg transition duration-300"
+            >
+              Send Mail
+            </button>
           </form>
         </div>
 
         {/* Right Side - Contact Info Section */}
-       <div
-          className="lg:col-span-5 p-8 md:p-12 flex flex-col justify-center rounded-xl"
-          style={{
-            backgroundColor: "#4A90E2", // Updated to a blue shade
-            color: "#FFFFFF", // White text for better contrast
-          }}
+        <div
+          className="lg:col-span-5 p-8 md:p-12 flex flex-col justify-center rounded-r-xl"
+          style={{ backgroundColor: "#4A90E2", color: "#FFFFFF" }}
         >
-          
           <div className="text-center lg:text-left mb-8">
-            <h2 className="text-3xl font-bold text-[#2C3539]">Contact Information</h2>
+            <h2 className="text-3xl font-bold text-white">Contact Information</h2>
             <p className="mt-3 text-white">
               Feel free to reach out to us through any of these channels. We're here to help!
             </p>
           </div>
 
-          {/* Contact Details */}
           <div className="space-y-6 w-full mb-10">
             {/* Phone */}
             <div className="flex items-center space-x-4">
-              <div className="w-12 h-12 rounded-full flex items-center justify-center" style={{ backgroundColor: "#2C3539" }}>
+              <div className="w-12 h-12 rounded-full flex items-center justify-center bg-[#2C3539]">
                 <FontAwesomeIcon icon={faPhone} className="text-white" />
               </div>
               <div>
-                <p className="font-semibold text-[#2C3539]">Phone</p>
+                <p className="font-semibold text-white">Phone</p>
                 <p className="text-white">+880 1822988250</p>
               </div>
             </div>
 
             {/* Email */}
             <div className="flex items-center space-x-4">
-              <div className="w-12 h-12 rounded-full flex items-center justify-center" style={{ backgroundColor: "#2C3539" }}>
+              <div className="w-12 h-12 rounded-full flex items-center justify-center bg-[#2C3539]">
                 <FontAwesomeIcon icon={faEnvelope} className="text-white" />
               </div>
               <div>
-                <p className="font-semibold text-[#2C3539]">Email</p>
+                <p className="font-semibold text-white">Email</p>
                 <p className="text-white">foysalatik33@gmail.com</p>
               </div>
             </div>
 
             {/* Address */}
             <div className="flex items-center space-x-4">
-              <div className="w-12 h-12 rounded-full flex items-center justify-center" style={{ backgroundColor: "#2C3539" }}>
+              <div className="w-12 h-12 rounded-full flex items-center justify-center bg-[#2C3539]">
                 <FontAwesomeIcon icon={faMapMarkerAlt} className="text-white" />
               </div>
               <div>
-                <p className="font-semibold text-[#2C3539]">Address</p>
+                <p className="font-semibold text-white">Address</p>
                 <p className="text-white">Dhaka, Bangladesh</p>
               </div>
             </div>
           </div>
-
         </div>
 
       </div>
