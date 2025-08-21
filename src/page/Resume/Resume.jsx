@@ -3,7 +3,7 @@
 
 const Resume = () => {
   return (
-    <div className="bg-gray-100 min-h-screen py-10">
+    <div className="bg-gray-100 min-h-screen py-10 mt-10">
       <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-8">
         
         {/* Header */}

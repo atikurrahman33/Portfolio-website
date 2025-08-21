@@ -12,7 +12,7 @@ const Project = () => {
   };
 
   return (
-    <div className="w-full px-6 mt-3">
+    <div id="project" className="w-full px-6 mt-3">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-gray-900 text-center mb-12">
           My Projects

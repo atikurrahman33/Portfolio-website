@@ -35,7 +35,7 @@ const skills = [
 
 const Skills = () => {
   return (
-    <div className="w-full py-16 px-6 ">
+    <div id="skill" className="w-full py-16 px-6 ">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-gray-900 text-center mb-10">
           My Technology Stack
