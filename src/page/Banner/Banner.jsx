@@ -16,7 +16,7 @@ const tools = [
 const Banner = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const resumeUrl =
-    "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf";
+    "/Document/Atikur_Rahman_Resume .pdf.pdf";
 
   const handleDownload = () => {
     const link = document.createElement("a");
