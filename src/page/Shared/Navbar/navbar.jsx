@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="navbar max-w-7xl mx-auto mt-2 fixed top-0 left-0 right-0 backdrop-blur-md bg-blue-200/30 shadow-md z-50 px-4 lg:px-0">
+    <div className="navbar max-w-7xl mx-auto  fixed top-0 left-0 right-0 backdrop-blur-md bg-blue-200/30 shadow-md z-50  lg:px-0">
       {/* Left side: Logo */}
-      <div className="navbar-start">
+      <div className="navbar-start pl-1">
         <Link to="/" className="text-3xl font-bold text-blue-500">
           Atikur Rahman
         </Link>
